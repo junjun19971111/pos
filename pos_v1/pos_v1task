@@ -1,18 +1,15 @@
 1.将输入单子改成对象数组                                       12min
 
-Input   barcodeItem:   [string]    loadAllItems: [object] 
+Input   barcodeItem:   [string]   
 
 Output  goodItem:  [object]
              {
 		barcode: string
-		name: string
-		unit: string
-		price: number 
 		count: number
 	  }
-2.计算商品对象 实际需要支付的数量                                           12min
+2.计算商品对象 实际需要支付的数量                                           15min
 
-Input     goodItem: [object],    loadPromotions: [object]
+Input     goodItem: [object],    loadPromotions: [object]  loadAllItems: [object] 
 
 Output    goodItem: [object]      goodItem:  [object]
             				{
