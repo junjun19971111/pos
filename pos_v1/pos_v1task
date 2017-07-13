@@ -1,4 +1,4 @@
-1.将输入单子改成对象数组                                       12min
+1.计算每个商品的数量                                 12min
 
 Input   barcodeItem:   [string]   
 
@@ -7,23 +7,24 @@ Output  Item:  [object]
 		barcode: string
 		count: number
 	  }
-2.计算商品对象 实际需要支付的数量                                           15min
+2.计算商品对象 实际需要支付的数量和节省数量                                           15min
 
 Input     Item: [object],    loadPromotions: [object]  loadAllItems: [object] 
 
-Output    goodItem: [object]      goodItem:  [object]
+Output    goodItem: [object]      
             				{
 						barcode: string
 						name: string
 						unit: string
 						price: number 
 						count: number
+            reduce_count:number
 	  				}
-3.计算小计                                                                   5min
+3.计算小计与每件商品的节省                                                                   5min
 
 Input     goodItem: [object] 
 
-Output    goodItem: [object]      goodItem:  [object]
+Output    goodItem: [object]      
             				{
 						barcode: string 
 						name: string
@@ -31,12 +32,13 @@ Output    goodItem: [object]      goodItem:  [object]
 						price: number 
 						count: number
 						itemPrice: number
+            reducePrice:number
 	  				}
-4.计算总价                                                                  5min
+4.计算总价 和 总节省                                                                 5min
 
 Input      goodItem: [object]
 
-Output     allPrice: number            
+Output     allPrice: number   allReducePrice:number           
 
 
 5.打印                                                                     8min
