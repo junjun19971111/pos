@@ -2,14 +2,14 @@
 
 Input   barcodeItem:   [string]   
 
-Output  goodItem:  [object]
+Output  Item:  [object]
              {
 		barcode: string
 		count: number
 	  }
 2.计算商品对象 实际需要支付的数量                                           15min
 
-Input     goodItem: [object],    loadPromotions: [object]  loadAllItems: [object] 
+Input     Item: [object],    loadPromotions: [object]  loadAllItems: [object] 
 
 Output    goodItem: [object]      goodItem:  [object]
             				{
