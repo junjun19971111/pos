@@ -1,6 +1,6 @@
 1.将输入单子改成对象数组                                       12min
 
-Input   tags:   [string]
+Input   barcodeItem:   [string]    loadAllItems: [object] 
 
 Output  goodItem:  [object]
              {
