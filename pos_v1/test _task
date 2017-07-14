@@ -1,0 +1,19 @@
+1.得到输出
+
+Input  num：number
+
+Output    
+		(the num is of 3  or 3 in the num)      Fizz: string ;
+
+		(the num is of 5)			Buzz: string (the num is of 5);
+		
+		(the num is of 7)			Whizz: string (the num is of 7);
+
+		(the num is of  3 and 5)		FizzBuzz:string
+
+		(the num is of  3 and 7)		FizzWhizz:stirng
+
+		(the num is of  5 and 7)		BuzzWhizz : string
+
+		(the num is of  3 and 5 and 7)		FizzBuzzWhizz: string
+	     
