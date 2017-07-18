@@ -1,73 +1,168 @@
 'use strict';
+describe('workShop', () => {
 
-describe('pos', () => {
+    const number='5678';
 
-  it('should print text', () => {
+    it('the result is 0A0B', () => {
 
-    const inputs = [
-      {
-        barcode: 'ITEM000000',
-        name: '可口可乐',
-        unit: '瓶',
-        price: 3.00
+        const result = workShop(number);
 
-      },
-      {
-        barcode: 'ITEM000000',
-        name: '可口可乐',
-        unit: '瓶',
-        price: 3.00
-      },
-      {
-        barcode: 'ITEM000000',
-        name: '可口可乐',
-        unit: '瓶',
-        price: 3.00
-      },
-      {
-        barcode: 'ITEM000000',
-        name: '可口可乐',
-        unit: '瓶',
-        price: 3.00
-      },
-      {
-        barcode: 'ITEM000000',
-        name: '可口可乐',
-        unit: '瓶',
-        price: 3.00
-      },
-      {
-        barcode: 'ITEM000001',
-        name: '雪碧',
-        unit: '瓶',
-        price: 3.00
-      },
-      {
-        barcode: 'ITEM000001',
-        name: '雪碧',
-        unit: '瓶',
-        price: 3.00
-      },
-      {
-        barcode: 'ITEM000004',
-        name: '电池',
-        unit: '个',
-        price: 2.00
-      }
-    ];
+        expect(result).toEqual('0A0B');
+    });
+});
+describe('workShop',()=>{
 
-    spyOn(console, 'log');
+    const number='6781';
 
-    printReceipt(inputs);
+    it('the result is 0A1B',()=>{
 
-    const expectText = `***<没钱赚商店>收据***
-名称：可口可乐，数量：5瓶，单价：3.00(元)，小计：15.00(元)
-名称：雪碧，数量：2瓶，单价：3.00(元)，小计：6.00(元)
-名称：电池，数量：1个，单价：2.00(元)，小计：2.00(元)
-----------------------
-总计：23.00(元)
-**********************`;
+        const  result= workShop(number);
 
-    expect(console.log).toHaveBeenCalledWith(expectText);
-  });
+        expect(result).toEqual('0A1B');
+
+    });
+});
+describe('workShop',()=>{
+
+    const number='2781';
+
+    it('the result is 0A2B',()=>{
+
+        const  result= workShop(number);
+
+        expect(result).toEqual('0A2B');
+
+    });
+});
+describe('workShop',()=>{
+
+    const number='2741';
+
+    it('the result is 0A3B',()=>{
+
+        const  result= workShop(number);
+
+        expect(result).toEqual('0A3B');
+
+    });
+});
+describe('workShop',()=>{
+
+    const number='2341';
+
+    it('the result is 0A4B',()=>{
+
+        const  result= workShop(number);
+
+        expect(result).toEqual('0A4B');
+
+    });
+});
+describe('workShop',()=>{
+
+    const number='1678';
+
+    it('the result is 1A0B',()=>{
+
+        const  result= workShop(number);
+
+        expect(result).toEqual('1A0B');
+
+    });
+});
+describe('workShop',()=>{
+
+    const number='6281';
+
+    it('the result is 1A1B',()=>{
+
+        const  result= workShop(number);
+
+        expect(result).toEqual('1A1B');
+
+    });
+});
+describe('workShop',()=>{
+
+    const number='4281';
+
+    it('the result is 1A2B',()=>{
+
+        const  result= workShop(number);
+
+        expect(result).toEqual('1A2B');
+
+    });
+});
+describe('workShop',()=>{
+
+    const number='1423';
+
+    it('the result is 1A3B',()=>{
+
+        const  result= workShop(number);
+
+        expect(result).toEqual('1A3B');
+
+    });
+});
+describe('workShop',()=>{
+
+    const number='1267';
+
+    it('the result is 2A0B',()=>{
+
+        const  result= workShop(number);
+
+        expect(result).toEqual('2A0B');
+
+    });
+})
+describe('workShop',()=>{
+
+    const number='1247';
+
+    it('the result is 2A1B',()=>{
+
+        const  result= workShop(number);
+
+        expect(result).toEqual('2A1B');
+
+    });
+});
+describe('workShop',()=>{
+
+    const number='1243';
+
+    it('the result is 2A2B',()=>{
+
+        const  result= workShop(number);
+
+        expect(result).toEqual('2A2B');
+
+    });
+});
+describe('workShop',()=>{
+
+    const number='1237';
+
+    it('the result is 3A0B',()=>{
+
+        const  result= workShop(number);
+
+        expect(result).toEqual('3A0B');
+
+    });
+});
+describe('workShop',()=>{
+
+    const number='1234';
+
+    it('the result is 4A0B',()=>{
+
+        const  result= workShop(number);
+
+        expect(result).toEqual('4A0B');
+
+    });
 });
